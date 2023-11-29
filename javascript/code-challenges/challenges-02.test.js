@@ -83,8 +83,23 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 ------------------------------------------------------------------------------------------------ */
 
 const mapTwoToThe = (arr) => {
-  // Solution code here...
+  const newArray = [];
+  arr.map(function(element) {
+    newArray.push(Math.pow(2, element));
+
+  });
+
+  return newArray;
 };
+
+// const mapTwoToThe = (arr) => {
+//   const newArray = [];
+//   arr.map => element => (Math.pow(2, element));
+
+//   });
+
+//   return newArray;
+// };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
