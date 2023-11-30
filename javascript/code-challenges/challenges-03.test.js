@@ -23,13 +23,7 @@ For example, typeNum([1, 'bob' ,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const typeNum = (arr) => {
-  outputArray = [];
-  arr.filter((val, idx) => {
-    if (val > 0) {
-      outputArray.push(val);
-    }
-  });
-  return outputArray
+  return arr.filter((val) => val > 0);
 
 
 };
@@ -43,7 +37,7 @@ For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 ------------------------------------------------------------------------------------------------ */
 
 const containsAnd = (arr) => {
-  // Solution code here...
+  return arr.filter((string) => string.includes ('and'));
 };
 
 /* ------------------------------------------------------------------------------------------------
