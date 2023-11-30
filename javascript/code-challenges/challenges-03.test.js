@@ -23,7 +23,15 @@ For example, typeNum([1, 'bob' ,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const typeNum = (arr) => {
-  // Solution code here...
+  outputArray = [];
+  arr.filter((val, idx) => {
+    if (val > 0) {
+      outputArray.push(val);
+    }
+  });
+  return outputArray
+
+
 };
 
 /* ------------------------------------------------------------------------------------------------
