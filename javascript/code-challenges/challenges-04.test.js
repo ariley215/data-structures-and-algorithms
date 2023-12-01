@@ -33,13 +33,17 @@ Ensure that the original people, stuff, and state are unchanged.
 ------------------------------------------------------------------------------------------------ */
 
 const addPeople = (arr) => {
-  const firstNewPerson = 'Odie';
-  const secondNewPerson = 'Garfield'
-  const newPeople = [firstNewPerson, ...people, secondNewPerson];
-  return newPeople;
+  // const firstNewPerson = 'Odie';
+  // const secondNewPerson = 'Garfield';
+  // const newPeople = [firstNewPerson, ...people, secondNewPerson];
+  // return newPeople;
+
+// const newPeople = ['Odie', ...people, 'Garfield'];
+// return newPeople;
+
+return = newPeople = ['Odie', ...people, 'Garfield'];
 
 };
-
 
 /*------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -57,7 +61,11 @@ Prove that the original people, stuff, and state are unchanged.
 ------------------------------------------------------------------------------------------------ */
 
 const setState = (arr) => {
-  // Solution code here...
+  return newState =  { [...people], {'stuff'} }:
+
+
+
+
 };
 
 
@@ -77,7 +85,7 @@ Ensure that the original people array and stuff objects are unchanged
 ------------------------------------------------------------------------------------------------ */
 
 const newState = (arr) => {
-  // Solution code here...
+
 };
 
 
