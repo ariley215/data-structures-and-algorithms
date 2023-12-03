@@ -59,15 +59,11 @@ Prove that the original people, stuff, and state are unchanged.
 ------------------------------------------------------------------------------------------------ */
 
 const setState = (arr) => {
-  const copiedPeople = [...people];
-  const copiedStuff = { ...stuff };
 
   return {
-   people: copiedPeople,
-   stuff: copiedStuff
+   people: [...people],
+   stuff: { ...stuff }
   };
-
-
 
 
 };
@@ -88,8 +84,17 @@ Ensure that the original people array and stuff objects are unchanged
 
 ------------------------------------------------------------------------------------------------ */
 
-const newState = (arr) => {
+const newState = () => {
+  return {
+    people: [...people],
+    stuff: {...stuff,
+    cars: [...stuff.cars,'Ford'],
+    toothbrush: 'brand new',
+    toys: 58,
+    }
 
+
+  }
 
 };
 
