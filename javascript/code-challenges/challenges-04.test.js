@@ -12,7 +12,7 @@ const stuff = {
   toys: 57,
   toothbrush: 'frayed',
   cars: ['Toyota', 'Mazda']
-}
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
@@ -33,15 +33,13 @@ Ensure that the original people, stuff, and state are unchanged.
 ------------------------------------------------------------------------------------------------ */
 
 const addPeople = (arr) => {
-  // const firstNewPerson = 'Odie';
-  // const secondNewPerson = 'Garfield';
-  // const newPeople = [firstNewPerson, ...people, secondNewPerson];
-  // return newPeople;
+  const firstNewPerson = 'Odie';
+  const secondNewPerson = 'Garfield';
+  const newPeople = [firstNewPerson, ...people, secondNewPerson];
+  return newPeople;
 
-// const newPeople = ['Odie', ...people, 'Garfield'];
-// return newPeople;
 
-return = newPeople = ['Odie', ...people, 'Garfield'];
+
 
 };
 
@@ -61,7 +59,13 @@ Prove that the original people, stuff, and state are unchanged.
 ------------------------------------------------------------------------------------------------ */
 
 const setState = (arr) => {
-  return newState =  { [...people], {'stuff'} }:
+  const copiedPeople = [...people];
+  const copiedStuff = { ...stuff };
+
+  return {
+   people: copiedPeople,
+   stuff: copiedStuff
+  };
 
 
 
@@ -85,6 +89,7 @@ Ensure that the original people array and stuff objects are unchanged
 ------------------------------------------------------------------------------------------------ */
 
 const newState = (arr) => {
+
 
 };
 
