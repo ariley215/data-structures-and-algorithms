@@ -54,7 +54,7 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
-  // Solution code here...
+  return arr.reduce((count) => count + 1, 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
