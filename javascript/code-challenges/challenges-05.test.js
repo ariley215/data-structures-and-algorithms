@@ -132,6 +132,12 @@ const getHouses = (arr) => {
   return houses;
 };
 
+// const getHouses = (arr) => {
+//   return arr
+//   .filter(character => character.house)
+//   .map(character => character.house);
+// };
+
 /*------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
@@ -145,7 +151,6 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  // Solution code here...
 
 };
 
