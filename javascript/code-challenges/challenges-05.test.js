@@ -74,7 +74,8 @@ const updateNumbers = (obj) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
-Write a function named getHouses that returns a new array containing the names of all of the houses in the data set.
+Write a function named getHouses that returns a new array containing the names of all of the houses in the data set.Object.keys, Object.values, and Object.entries
+
 ------------------------------------------------------------------------------------------------ */
 
 const characters = [
@@ -125,7 +126,7 @@ const getHouses = (arr) => {
   for (let index in arr) {
     const character = arr[index];
     if (character.house) {
-      houses.push(character.houses);
+      houses.push(character.house);
     }
   }
   return houses;
