@@ -18,7 +18,8 @@ Write a function named getCourseKeys that takes in the courseInfo object and ret
 
 For example: (['name', 'duration', 'topics', 'finalExam']).
 ------------------------------------------------------------------------------------------------ */
-const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningTrack: '8 weeks'},
+const courseInfo = {
+  name: 'Code 301', duration: { dayTrack: '4 weeks', eveningTrack: '8 weeks' },
   topics: ['SMACSS', 'APIs', 'NodeJS', 'SQL', 'jQuery', 'functional programming'],
   finalExam: true
 };
@@ -60,7 +61,12 @@ HR has asked you to change the data to make it easier to print so that it looks 
 ------------------------------------------------------------------------------------------------ */
 
 const updateNumbers = (obj) => {
-  // Solution code here...
+  const array = Object.entries(obj);
+  const updatedArray = array.map(([name, phoneNumber]) => `${name}: ${phoneNumber}`);
+
+  return updatedArray;
+
+
 };
 
 
@@ -116,7 +122,12 @@ const characters = [
 
 const getHouses = (arr) => {
   let houses = [];
-  // Solution code here...
+  for (let index in arr) {
+    const character = arr[index];
+    if (character.house) {
+      houses.push(character.houses);
+    }
+  }
   return houses;
 };
 
