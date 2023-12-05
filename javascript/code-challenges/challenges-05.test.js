@@ -18,16 +18,22 @@ Write a function named getCourseKeys that takes in the courseInfo object and ret
 
 For example: (['name', 'duration', 'topics', 'finalExam']).
 ------------------------------------------------------------------------------------------------ */
+
+=======
 const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningTrack: '8 weeks'},
+ main
   topics: ['SMACSS', 'APIs', 'NodeJS', 'SQL', 'jQuery', 'functional programming'],
   finalExam: true
 };
 
 const getCourseKeys = (courseInfo) => {
   return Object.keys(courseInfo);
-
-
+objects
 };
+
+
+
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -61,15 +67,24 @@ HR has asked you to change the data to make it easier to print so that it looks 
 ------------------------------------------------------------------------------------------------ */
 
 const updateNumbers = (obj) => {
-  // Solution code here...
-};
+ objects
+  const array = Object.entries(obj);
+  const updatedArray = array.map(([name, phoneNumber]) => `${name}: ${phoneNumber}`);
+
+  return updatedArray;
+
+
+
 
 
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
-Write a function named getHouses that returns a new array containing the names of all of the houses in the data set.
+objects
+Write a function named getHouses that returns a new array containing the names of all of the houses in the data set.Object.keys, Object.values, and Object.entries
+
+
 ------------------------------------------------------------------------------------------------ */
 
 const characters = [
@@ -117,11 +132,24 @@ const characters = [
 
 const getHouses = (arr) => {
   let houses = [];
-  // Solution code here...
+ objects
+  for (let index in arr) {
+    const character = arr[index];
+    if (character.house) {
+      houses.push(character.house);
+    }
+  }
   return houses;
 };
 
-/*------------------------------------------------------------------------------------------------
+// const getHouses = (arr) => {
+//   return arr
+//   .filter(character => character.house)
+//   .map(character => character.house);
+// };
+
+=======
+--------------------------------------------------------------------------
 CHALLENGE 6
 
 Write a function named hasChildrenValues that uses Object.values to determine if any given character in the data set has children.
@@ -134,9 +162,18 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  // Solution code here...
-
+objects
+  for (const person of arr) {
+    if (person.name === character) {
+      return Object.values(person.children).length > 0;
+    }
+  }
+  return false;
 };
+
+
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
