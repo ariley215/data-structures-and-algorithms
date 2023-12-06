@@ -25,7 +25,7 @@ let starWarsPeople = [
 ];
 
 const sortStarWarsCharacters = (starWarsArr) => {
-  return starWarsArr.sort((a,b) => b.height - a.height);
+  return starWarsArr.sort((a, b) => b.height - a.height);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -35,7 +35,7 @@ Write a function named removeThree that takes an index and an array. The functio
 ------------------------------------------------------------------------------------------------ */
 
 const removeThree = (idx, arr) => {
-  arr.splice(idx,3);
+  arr.splice(idx, 3);
   return arr;
 };
 
@@ -64,7 +64,7 @@ For example, if the input is 'Welcome', the output will be:
 
 const howMuchPencil = (str) => {
   let result = [];
-  for(let i = 0; i <= str.length; i++) {
+  for (let i = 0; i <= str.length; i++) {
     result.push(str.slice(i));
   }
   return result;
@@ -125,10 +125,24 @@ const gruffaloCrumble = {
 
 
 const listFoods = (recipe) => {
-  let result = [];
-  // Solution code here...
+  const result = [];
+
+  for (let i = 0; i < recipe.ingredients.length; i++) {
+    const ingredient = recipe.ingredients[i];
+    const indexOfSpace = ingredient.indexOf(' ');
+    let foodName;
+    if (indexOfSpace !== -1) {
+      foodName = ingredient.slice(indexOfSpace + 1);
+    } else {
+      foodName = ingredient;
+    }
+    result.push(foodName);
+  }
   return result;
+
+
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
