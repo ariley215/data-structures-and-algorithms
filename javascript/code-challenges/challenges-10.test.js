@@ -89,8 +89,17 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  // Solution code here...
+  const totalPerHour = Array.from({ length: hoursOpen.length }).fill(0);
 
+  for (let storeIndex = 0; storeIndex < stores.length; storeIndex++) {
+    const store = stores[storeIndex];
+
+    for (let hourIndex = 0; hourIndex < store.length; hourIndex++) {
+      totalPerHour[hourIndex] += store[hourIndex];
+    }
+  }
+
+  return totalPerHour;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -104,8 +113,20 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  // Solution code here...
+  const formattedData = [];
+
+  hours.forEach((hour, hourIndex) => {
+    const cookiesSold = data.reduce((sum, store) => sum + store[hourIndex], 0);
+    const formattedHourlyData = {
+      sales: `${cookiesSold} cookies`,
+      time: hour,
+    };
+    formattedData.push(formattedHourlyData);
+  });
+
+  return formattedData;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -129,8 +150,21 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
-  // Solution code here...
+  let treatsQuantity = 0;
+
+  arr.forEach((errand) => {
+    if (errand.store === 'Pet store') {
+      errand.items.forEach((item) => {
+        if (item.name === 'Treats') {
+          treatsQuantity += item.quantity;
+        }
+      });
+    }
+  });
+
+  return treatsQuantity;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
