@@ -60,9 +60,11 @@ For example, (123) 456-7890 returns 1234567890
 ------------------------------------------------------------------------------------------------ */
 
 const standardizePhoneNumbers = (arr) => {
-  // Solution code here...
+  // const result = arr.map(str => str.replace(/\D/g, ''));
+  // return result;
+  const result = arr.map(str => str.split('').filter(char => '0' <= char && char <= '9').join(''));
+  return result;
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
