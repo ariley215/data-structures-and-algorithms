@@ -34,7 +34,8 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['t', 
 ------------------------------------------------------------------------------------------------ */
 
 const firstLetters = (arr) => {
-  // Solution code here...
+  const result = arr.map(str => str.charAt(0));
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -173,7 +174,7 @@ describe('Testing challenge 1', () => {
   test('It should return an index position of the longest string', () => {
     const strArray1 = ['Ginger', 'Goose', 'Tangerine', 'Rosie', 'Mario', 'Malaki']
     const strArray2 = [];
-    const strArray3= ['Ginger']
+    const strArray3 = ['Ginger']
 
     expect(longestString(strArray1)).toStrictEqual(2);
     expect(longestString(strArray2)).toStrictEqual(-1);
