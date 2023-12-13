@@ -74,7 +74,12 @@ For example, 'abcdefg' returns 'bdf'
 ------------------------------------------------------------------------------------------------ */
 
 const onlyOddChars = (str) => {
-  // Solution code here...
+  let result = '';
+
+  for (let i = 1; i < str.length; i += 2) {
+    result += str[i];
+  }
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -84,7 +89,8 @@ Write a function named allHappy that takes in an array of strings and returns a 
 ------------------------------------------------------------------------------------------------ */
 
 const allHappy = (arr) => {
-  // Solution code here...
+  return arr.reduce((result, str) => result && str.includes(':)'), true);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
