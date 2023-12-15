@@ -139,7 +139,9 @@ let starWarsData = [{
 }];
 
 let findMaleAndFemale = (data) => {
-  // Solution code here...
+  const filteredCharacters = data.filter(character => character.gender === 'male' || character.gender === 'female');
+  const names = filteredCharacters.map(character => character.name);
+  return names.join(' and ');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -149,7 +151,18 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 ------------------------------------------------------------------------------------------------ */
 
 let findShortest = (data) => {
-  // Solution code here...
+  const shortCharacter = data.reduce((shortest, character ) => {
+    const height = parseInt(character.height);
+    if (!isNaN(height) && (shortest === null || height < shortest.height)) {
+      return { name: character.name, height: height };
+    } else {
+      return shortest;
+    }
+  }, null);
+
+  return shortCharacter ? shortCharacter.name : null;
+
+
 };
 
 /* ------------------------------------------------------------------------------------------------
