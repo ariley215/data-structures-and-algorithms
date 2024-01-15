@@ -21,12 +21,13 @@ class LinkedList:
         return False
 
     def __str__(self):
-        values = []
+        values = ""
         current = self.head
         while current:
-            values.append(str(current.value))
+            values += f"{{ {current.value} }} -> "
             current = current.next
-        return " -> ".join(values) + " -> None"
+        values += "NULL"
+        return values
 
 
 
