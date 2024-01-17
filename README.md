@@ -12,6 +12,8 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/2-co
 
 [Sum Matrix Rows](python/docs/matrix-sum/README.md)
 
+[Linked List Insertion](python/docs/linked_list_insertions/README.md)
+
 ## Repository Quick Tour and Usage
 
 ### 301 Code Challenges
