@@ -1,11 +1,13 @@
 # Challenge Title
-<!-- Description of the challenge -->
+
+Extending an Implementation
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+
+![Whiteboard](python/docs/linked_list_insertions/White Board.tldr)
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
 
 ## Solution
-<!-- Show how to run your code, and examples of it in action -->
+
