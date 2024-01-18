@@ -42,6 +42,18 @@ class LinkedList:
             else:
                 current = current.next
 
+    def kth_from_end(self,index):
+        prev = None
+        current = self.head
+        while current is not None:
+            next_node = current.next
+            current.next = prev
+            prev = current
+            current = next_node
+        while current:
+            if index == 0:
+                return index.value
+
 
 
 
