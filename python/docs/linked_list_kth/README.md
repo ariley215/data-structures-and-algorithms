@@ -12,10 +12,12 @@ kth from end
 
 ## Whiteboard Process
 
-[WhiteBoard](python/docs/linked_list_kth/White Board.tldr)
+![whiteboard](python/docs/linked_list_kth/Whiteboard-linked-list-kth.png)
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Big O
+Time: O(n) - longer the linked list, the more time it will take to run the function
+Space: O(1) - the code takes up the same amount of space no matter the size of the data.
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
