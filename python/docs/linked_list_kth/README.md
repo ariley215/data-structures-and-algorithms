@@ -15,9 +15,11 @@ kth from end
 ![whiteboard](python/docs/linked_list_kth/Whiteboard-linked-list-kth.png)
 
 ## Approach & Efficiency
+
 Big O
 Time: O(n) - longer the linked list, the more time it will take to run the function
 Space: O(1) - the code takes up the same amount of space no matter the size of the data.
 
 ## Solution
-<!-- Show how to run your code, and examples of it in action -->
+
+python data_structures.linked_list.py
