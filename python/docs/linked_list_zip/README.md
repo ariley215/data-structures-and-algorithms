@@ -13,7 +13,7 @@ Zip two linked lists.
 
 ## Whiteboard Process
 
-![whiteboard](python/docs/linked_list_kth/Whiteboard-linked-list-kth.png)
+![whiteboard](python/docs/linked_list_zip/CodeChallenge8.png)
 
 ## Approach & Efficiency
 

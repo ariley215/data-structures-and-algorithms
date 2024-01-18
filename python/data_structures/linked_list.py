@@ -42,6 +42,9 @@ class LinkedList:
             else:
                 current = current.next
 
+    def insert_after():
+        pass
+
     def kth_from_end(self,index):
         prev = None
         current = self.head
