@@ -13,13 +13,15 @@ Zip two linked lists.
 
 ## Whiteboard Process
 
-![whiteboard](python/docs/linked_list_zip/CodeChallenge8.png)
+![whiteboard](docs/linked_list_zip/whiteboardCodeChallenge8.png)
 
 ## Approach & Efficiency
 
 Big O
-Time:
-Space:
+
+Time: O(n) the longer the lists the more time to change the values to become one zipped list
+
+Space: O(1) only the values of the nodes are changed. The lists use the same space when they are zipped as when they are seperate.
 
 ## Solution
 
