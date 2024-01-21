@@ -37,7 +37,7 @@ def test_pop_single():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_pop_some():
     s = Stack()
 
@@ -53,7 +53,7 @@ def test_pop_some():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_pop_until_empty():
     s = Stack()
     s.push("apple")
@@ -67,7 +67,7 @@ def test_pop_until_empty():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_peek():
     s = Stack()
     s.push("apple")
@@ -77,7 +77,7 @@ def test_peek():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_peek_empty():
     s = Stack()
     with pytest.raises(InvalidOperationError) as e:
@@ -86,7 +86,7 @@ def test_peek_empty():
     assert str(e.value) == "Method not allowed on empty collection"
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_pop_empty():
     s = Stack()
     with pytest.raises(InvalidOperationError) as e:
