@@ -49,6 +49,8 @@ The class should contain the following methods:
       Arguments: none
       Returns: Boolean indicating whether or not the queue is empty
 
+*completed 8:00PMEST*
+
 ## Approach & Efficiency
 
 ## Solution
