@@ -53,4 +53,4 @@ The class should contain the following methods:
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
-python -m data_structures.stack
+pytest tests/data_structures/test_queue.py
