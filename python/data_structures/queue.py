@@ -28,7 +28,7 @@ class Queue:
         removes front node from the queue and returns its value
         """
         if self.front is None:
-            return None
+            raise InvalidOperationError("Method not allowed on empty collection")
 
         dequeue_value = self.front.value
         self.front = self.front.next
@@ -45,3 +45,7 @@ class Queue:
         peek_back_value = self.back.value
         return peek_back_value and peek_front_value
 
+    def is_empty(self):
+        if self.front is None:
+            if self.back is None:
+                return True
