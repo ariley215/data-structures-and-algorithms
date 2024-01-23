@@ -12,7 +12,7 @@ kth from end
 
 ## Whiteboard Process
 
-![whiteboard](python/docs/linked_list_kth/Whiteboard-linked-list-kth.png)
+![whiteboard](/python/docs/linked_list_kth/Whiteboard-linked-list-kth.png)
 
 ## Approach & Efficiency
 

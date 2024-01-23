@@ -4,7 +4,7 @@ Sum rows of a matrix
 
 ## Whiteboard Process
 
-![Challenge 4 Whiteboard](python/docs/matrix-sum/CodeChallenge4_2024-01-12_14-30-57.png)
+![Challenge 4 Whiteboard](/python/docs/matrix-sum/CodeChallenge4_2024-01-12_14-30-57.png)
 
 ## Approach & Efficiency
 

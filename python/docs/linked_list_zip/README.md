@@ -13,7 +13,7 @@ Zip two linked lists.
 
 ## Whiteboard Process
 
-![whiteboard](docs/linked_list_zip/whiteboardCodeChallenge8.png)
+![whiteboard](/docs/linked_list_zip/whiteboardCodeChallenge8.png)
 
 ## Approach & Efficiency
 

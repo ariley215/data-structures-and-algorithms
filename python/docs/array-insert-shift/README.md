@@ -4,7 +4,7 @@ Insert and shift an array at the middle index
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![Challenge 2 Whiteboard](docs/array-insert-shift/CodeChallenge2_2024-01-10_15-25-56.png)
+![Challenge 2 Whiteboard](/python/docs/array-insert-shift/CodeChallenge2_2024-01-10_15-25-56.png)
 
 ## Approach & Efficiency
 

@@ -7,7 +7,7 @@ class Stack:
 
     def __init__(self):
         self.top = None
-        pass
+    
 
     def push(self, value):
         new_node = Node(value)

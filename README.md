@@ -18,6 +18,10 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/2-co
 
 [Linked List Zip](python/docs/linked_list_zip/README.md)
 
+[Stacks and Queues](python/docs/stack_and_queue/README.md)
+
+[Pseudo Stack and Queue](python/docs/stack_queue_pseudo/README.md)
+
 ## Repository Quick Tour and Usage
 
 ### 301 Code Challenges
