@@ -24,6 +24,7 @@ dequeue
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
+![Animal Shelter S&Q WhiteBoard](/python/docs/stack_queue_animal_shelter/CodeChallenge12Whiteboard.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
