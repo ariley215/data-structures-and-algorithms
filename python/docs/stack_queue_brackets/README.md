@@ -10,3 +10,4 @@ Multi-bracket Validation
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
+pytest tests/code_challenges/test_stack_queue_brackets.py
