@@ -22,6 +22,8 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/2-co
 
 [Pseudo Stack and Queue](python/docs/stack_queue_pseudo/README.md)
 
+[Animal Shelter: Stack and Queue](python/docs/stack_queue_animal_shelter/README.md)
+
 ## Repository Quick Tour and Usage
 
 ### 301 Code Challenges
