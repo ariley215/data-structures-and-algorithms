@@ -27,12 +27,21 @@ dequeue
 ![Animal Shelter S&Q WhiteBoard](/python/docs/stack_queue_animal_shelter/CodeChallenge12Whiteboard.png)
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-Big O
+
+**Big O**
+
+*Enqueue*
+
+Space: O(1)
+
+Time: O(1)
+
+*Dequeue*
 
 Space:
 
 Time:
+
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 
