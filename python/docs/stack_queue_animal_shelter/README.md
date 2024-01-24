@@ -38,10 +38,9 @@ Time: O(1)
 
 *Dequeue*
 
-Space:
+Space: O(n)
 
-Time:
+Time: O(1)
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
-
