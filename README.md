@@ -24,6 +24,8 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/2-co
 
 [Animal Shelter: Stack and Queue](python/docs/stack_queue_animal_shelter/README.md)
 
+[Stack and Queue: Brackets](python/docs/stack_queue_brackets/README.md)
+
 ## Repository Quick Tour and Usage
 
 ### 301 Code Challenges
