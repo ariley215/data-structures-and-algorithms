@@ -28,27 +28,27 @@ class BinarySearchTree(BinaryTree):
 
         traverse(self.root, node)
 
+    def contains(self, value):
+        target_value = value
 
-# def add(self, value):
-#     node = Node(value)
+        if self.root is None:
+            return False
 
-#     if self.root is None:
-#         self.root = node
+        def check_tree(node_to_ask, target_value):
+            if node_to_ask is None:
+                return False
+            if target_value < node_to_ask.value:
+                return check_tree(node_to_ask.left, target_value)
 
-#     def traverse(node, node_to_add):
-#         if node is None:
-#             return
+            elif target_value > node_to_ask.value:
+                return check_tree(node_to_ask.right, target_value)
+            elif target_value == node_to_ask.value:
+                return True
 
-#         if node_to_add.value < node.value:
-#             if node.left is None:
-#                 node.left = node_to_add
-#             else:
-#                 traverse(node.left, node_to_add)
+        return check_tree(self.root, target_value)
 
-#         elif node_to_add.value > node.value:
-#             if node.right is None:
-#                 node.right = node_to_add
-#             else:
-#                 traverse(node.right, node_to_add)
 
-#     traverse(self.root, node)
+
+
+
+
