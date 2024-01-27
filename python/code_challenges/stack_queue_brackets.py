@@ -1,6 +1,6 @@
 
 def multi_bracket_validation(input_string):
-    # Initialize empty stack
+    # Initialize empty stack // use a Stack() class
     stack = []
     # define sets of brackets for matching the input
     opening_brackets = ['(', '[', '{']
