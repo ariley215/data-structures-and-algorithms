@@ -29,7 +29,6 @@ class BinarySearchTree(BinaryTree):
         traverse(self.root, node)
 
     def contains(self, value):
-        target_value = value
 
         if self.root is None:
             return False
@@ -45,7 +44,7 @@ class BinarySearchTree(BinaryTree):
             elif target_value == node_to_ask.value:
                 return True
 
-        return check_tree(self.root, target_value)
+        return check_tree(self.root, value)
 
 
 
