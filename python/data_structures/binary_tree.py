@@ -62,7 +62,24 @@ class BinaryTree():
 
         return traverse(self.root)
 
-    def find_max
+    def find_max(root):
+        def mod_pre_order(node, max_value_list):
+            max_value_list = []
+            if node.value > max_value_list[0]:
+                max_value_list[0] = node.value
+            if node.right:
+                mod_pre_order(node.left, max_value_list)
+            if node.left:
+                mod_pre_order(node.right, max_value_list)
+
+            mod_pre_order(node, max_value_list)
+
+            return max_value_list[0]
+
+
+
+
+
 
 
 class Node:
