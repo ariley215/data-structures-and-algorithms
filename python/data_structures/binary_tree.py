@@ -67,7 +67,7 @@ class BinaryTree:
         max_value_list = [float('-inf')]
 
         def mod_pre_order(node):
-            
+
             if node:
 
                 max_value_list[0] = max(max_value_list[0], node.value)

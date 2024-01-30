@@ -28,6 +28,8 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/2-co
 
 [Binary Tree Max](python/docs/tree_max/README.md)
 
+[Binary Tree Breadth First](python/docs/tree_breadth_first/README.md)
+
 ## Repository Quick Tour and Usage
 
 ### 301 Code Challenges
