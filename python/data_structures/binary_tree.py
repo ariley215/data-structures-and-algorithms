@@ -1,12 +1,10 @@
-class BinaryTree():
+class BinaryTree:
     """
     Put docstring here
     """
 
     def __init__(self):
         self.root = None
-
-
 
     def pre_order(self):
         def traverse(node):
@@ -62,30 +60,29 @@ class BinaryTree():
 
         return traverse(self.root)
 
-    def find_max(root):
-        def mod_pre_order(node, max_value_list):
-            max_value_list = []
-            if node.value > max_value_list[0]:
-                max_value_list[0] = node.value
-            if node.right:
-                mod_pre_order(node.left, max_value_list)
-            if node.left:
-                mod_pre_order(node.right, max_value_list)
+    def find_maximum_value(self):
+        if self.root is None:
+            return None
 
-            mod_pre_order(node, max_value_list)
+        max_value_list = [float('-inf')]
 
-            return max_value_list[0]
+        def mod_pre_order(node):
+            
+            if node:
+
+                max_value_list[0] = max(max_value_list[0], node.value)
 
 
+                mod_pre_order(node.left)
+                mod_pre_order(node.right)
 
 
+        mod_pre_order(self.root)
 
-
+        return max_value_list[0]
 
 class Node:
     def __init__(self, value):
         self.value = value
         self.left = None
         self.right = None
-
-
