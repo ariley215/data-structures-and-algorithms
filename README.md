@@ -26,6 +26,8 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/2-co
 
 [Stack and Queue: Brackets](python/docs/stack_queue_brackets/README.md)
 
+[Binary Tree Max](python/docs/tree_max/README.md)
+
 ## Repository Quick Tour and Usage
 
 ### 301 Code Challenges
