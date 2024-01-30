@@ -62,6 +62,8 @@ class BinaryTree():
 
         return traverse(self.root)
 
+    def find_max
+
 
 class Node:
     def __init__(self, value):
