@@ -18,16 +18,21 @@ Determine whether or not the value of each node is divisible by 3, 5 or both. Cr
 - If the value is not divisible by 3 or 5, simply turn the number into a String.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+
+![Whiteboard](/python/docs/tree_fizz_buzz/WBCCBTFizzBuzz.png)
 
 ## Approach & Efficiency
 
 **Big O**
 
-Time:
+Space: O(n) the bigger the input tree the bigger the
 
-Space:
+Time: O(h) the time it takes is dependant on the height of the tree.
 
 ## Solution
 
 python/data_structures/kary_tree.py
+
+## Tests
+
+pytest tests/code_challenges/test_tree_fizz_buzz.py
