@@ -42,8 +42,31 @@ class LinkedList:
             else:
                 current = current.next
 
-    def insert_after():
-        pass
+    def insert_after(self, target, value):
+        if self.head is None:
+            return None
+        current = self.head
+        while current:
+            if current.value == target:
+                new_node = Node(value)
+                new_node.next = current.next
+                current.next = new_node
+                return self.head
+            current = current.next
+        return self.head
+
+
+    def append(self, value):
+        new_node = Node(value)
+        if not self.head:
+            self.head = new_node
+            return
+        current = self.head
+        while current.next:
+            current = current.next
+        current.next = new_node
+
+
 
     def kth_from_end(self,index):
         prev = None
