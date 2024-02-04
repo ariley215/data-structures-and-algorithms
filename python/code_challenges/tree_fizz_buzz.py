@@ -1,26 +1,26 @@
-from data_structures.kary_tree import KaryTree, Node, Queue
+from data_structures.kary_tree import KaryTree, Node
 
 
 def fizz_buzz_tree(kary_tree):
-    if kary_tree.root is None:
-        return None
+    if not kary_tree.root:
+        return KaryTree()
 
-    clone_root = Node(kary_tree.root.value, kary_tree.root.children.copy())
+    def fizz_buzz(value):
+        value = Node.value
 
-    while Queue:
-        current, clone = Queue.pop(0)
-
-        if current.value % 3 == 0 and current.value % 5 == 0:
-            clone.value = "FizzBuzz"
-        if current.value % 3 == 0:
-            clone.value = "Fizz"
-        if current.value % 5 == 0:
-            clone.value = "Buzz"
+        if value % 3 == 0 and value % 5 == 0:
+            return "FizzBuzz"
+        elif value % 3 == 0:
+            return "Fizz"
+        elif value % 5 == 0:
+            return "Buzz"
         else:
-            clone.value = str(current.value)
+            return str(value)
 
-    for i, child in enumerate(current.children):
-        clone_child = Node(None)
-        clone.children[i] = clone_child
-        Queue.append((child, clone_child))
-    return KaryTree(root=clone_root)
+    def copy_tree(node):
+        new_node = Node(fizz_buzz(node.value))
+        for child in Node.children:
+            new_node.children.append(copy_tree(child))
+        return new_node
+    new_root = copy_tree(kary_tree.root)
+    return KaryTree(new_root)
