@@ -32,6 +32,10 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/2-co
 
 [Fizz Buzz Tree](python/docs/tree_fizz_buzz/README.md)
 
+[Reapted Word Hash Table](python/docs/hashtable_left_join/README.md)
+
+[Tree Intersection using Hash Table](python/docs/tree_intersection/README.md)
+
 ## Repository Quick Tour and Usage
 
 ### 301 Code Challenges
