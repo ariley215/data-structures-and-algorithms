@@ -4,6 +4,7 @@ Find common values in 2 binary trees.
 
 ## Whiteboard Process
 
+![whitebaord](/python/docs/tree_intersection/WBCCTreeIntersection-usingHT.png)
 
 ## Approach & Efficiency
 
