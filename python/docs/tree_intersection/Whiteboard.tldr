@@ -66,9 +66,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 584.0413576386609,
-			"y": 604.4650178077068,
-			"lastActivityTimestamp": 1708533087502,
+			"x": 613.7830870537855,
+			"y": 338.31105250782593,
+			"lastActivityTimestamp": 1708561310682,
 			"meta": {}
 		},
 		{
@@ -79,8 +79,8 @@
 			"typeName": "page"
 		},
 		{
-			"x": -358.970831515614,
-			"y": -259.0006318213786,
+			"x": -4.191107073316736,
+			"y": -166.90806788868534,
 			"z": 1,
 			"meta": {},
 			"id": "camera:page:page",
@@ -89,10 +89,8 @@
 		{
 			"editingShapeId": null,
 			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:OumhKDa9gI3uHN1XsCHUL"
-			],
-			"hoveredShapeId": "shape:OumhKDa9gI3uHN1XsCHUL",
+			"selectedShapeIds": [],
+			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -126,7 +124,7 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 783.3333129882812,
+				"w": 1002.0833129882812,
 				"h": 520.1388549804688
 			},
 			"insets": [
@@ -35251,7 +35249,7 @@
 			"props": {
 				"color": "yellow",
 				"size": "s",
-				"text": "Big O\n\nSpace: o(n)\n\nTime o(n)",
+				"text": "Big O\n\nSpace: o(n)\n\nTime o(n + m)",
 				"font": "serif",
 				"align": "start",
 				"verticalAlign": "start",
